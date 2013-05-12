@@ -1,0 +1,9 @@
+---
+title: Alle Gallerijen
+in_menu: false
+routed_title: Alle Gallerijen
+omit_index_path: true
+template: ../gallery_archive.template
+meta: {description: "de mondvermakers", Keywords: "de mondvermakers"}
+used_nodes: [*/index.nl.html, ../gallery_archive.template]
+---
