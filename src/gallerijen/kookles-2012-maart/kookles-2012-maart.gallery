@@ -1,0 +1,48 @@
+---
+title: Kookles Maart 2012
+images: **
+imagePageTemplate: ../../gallery_image.template
+galleryPageTemplate: ../../gallery_gallery.template
+galleryPagesMetaInfo:
+  sort_info: 40
+  in_menu: true
+  routed_title: Kookles Maart 2012
+  omit_index_path: true
+  used_nodes: [../../gallery_gallery.template]
+layouter: slides
+
+collageSize: 700x300
+slideColor: "#ddd"
+thumbnailSize: 88x88
+thumbnailResizeMethod: cropped
+description: Op het Menu&#58; <br />- Geroosterde croissant met gerookt eend<br />- Soep van pastinaak en amandel <br />- Oosters getint slaatje met gemarineerde biefstuklapjes <br />- Kabeljauwhaasje in rijke fetagarnituur <br />- Cupcakes
+---
+IMG_0345.jpg:
+  title: Geroosterde croissant met gerookt eend
+  sort_info: 1
+  description:
+
+IMG_0344.jpg:
+  title: Geroosterde croissant met gerookt eend
+  sort_info: 2
+  description:
+
+IMG_0346.jpg:
+  title: Geroosterde croissant met gerookt eend
+  sort_info: 3
+  description:
+
+IMG_0347.jpg:
+  title: Geroosterde croissant met gerookt eend
+  sort_info: 4
+  description:
+
+IMG_0348.jpg:
+  title: Geroosterde croissant met gerookt eend
+  sort_info: 5
+  description:
+
+IMG_0349.jpg:
+  title: Kabeljauwhaasje in rijke fetagarnituur
+  sort_info: 6
+  description: Oops ... halfop ...

@@ -1,0 +1,85 @@
+
+<%
+ginfo = context.node.node_info[:ginfo]
+ginfo.set_cur_image_id(context.node.node_info[:iIndex])
+%>
+
+<div class="photosolo">
+
+<div id="content">
+
+<div id="desc">
+  <h1><%= ginfo.cur_image.title %></h1>
+  <% if ginfo.cur_image['description'] %>
+    <p><%= ginfo.cur_image['description'] %></p>
+  <% else %>
+    <p><em>Geen beschrijving</em></p>
+  <% end %>
+</div>
+
+<div class="main">
+<% if ginfo.cur_image.width.to_i < ginfo.cur_image.height.to_i %>
+<p id="photo" style="padding:0 60px"><strong><img src="<%= ginfo.cur_image.filename %>" alt="<%= ginfo.cur_image.title %>" title="<%= ginfo.cur_image.title %>" width="360" height="480" /></strong></p>
+<% else %>
+<p id="photo" style="padding:0 0px"><strong><img src="<%= ginfo.cur_image.filename %>" alt="<%= ginfo.cur_image.title %>" title="<%= ginfo.cur_image.title %>" width="480" height="360" /></strong></p>
+<% end %>
+
+</div>
+
+<div id="meta">
+  <ul>
+    <li class="count">Foto <%= ginfo.get_cur_image_id + 1 %> van <%= ginfo.images.length %></li>
+    <li class="date"><%= ginfo.cur_image.date_taken() %></li>
+    <li class="tags"></li>
+  </ul>
+</div>
+
+<div id="prevnext">
+  <% if ginfo.prev_image %>
+  <div id="prev">
+    <span class="thumb">
+        <em style="background-image:url('<%= ginfo.prev_image.thumbnail_src() %>');">
+          <a href="<%= ginfo.prev_image.pagename %>" accesskey="z" style="background:#fff;">
+            <% if ginfo.cur_image.width.to_i < ginfo.cur_image.height.to_i %>
+              <strong style="width:190px; height:500px;">Previous</strong>
+            <% else %>            
+              <strong style="width:250px; height:380px;">Previous</strong>
+            <% end %>
+          <%= ginfo.prev_image.title %></a>
+        </em>
+    </span>
+  </div>
+  <% end %>
+
+  <% if ginfo.next_image %>
+  <div id="next">
+    <span class="thumb">
+        <em style="background-image:url('<%= ginfo.next_image.thumbnail_src() %>');">
+          <a href="<%= ginfo.next_image.pagename %>" accesskey="x" style="background:#fff;">
+            <% if ginfo.cur_image.width.to_i < ginfo.cur_image.height.to_i %>
+              <strong style="width:190px; height:500px;">Previous</strong>
+            <% else %>            
+              <strong style="width:250px; height:380px;">Previous</strong>
+            <% end %>
+          <%= ginfo.next_image.title %></a>
+        </em>
+    </span>
+  </div>
+  <% end %>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div id="slidesets">
+<ul class="slideset2">
+  <% (0..(ginfo.images.length-1)).each do |i| %>
+    <li class="thumb"><em style="background-image:url('<%= ginfo.images[i].thumbnail_src %>');"><a href="<%= ginfo.images[i].pagename %>" style="background:#fff;"><%= ginfo.images[i].title %></a></em></li>
+  <% end %>
+</ul>
+</div>
+
+

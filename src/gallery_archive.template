@@ -1,0 +1,51 @@
+
+<div class="archive">
+
+<div id="content">
+
+<h1>Gallerijen</h1>
+
+<div class="galleries">
+  <h2>Alle gallerijen</h2>
+  <ul>
+
+
+<% index_regex = /index\.[a-z][a-z]\.html/ %>
+<% index = context.node.alcn.index(index_regex) %>
+<% a_nodes = [] %>
+<% context.node.tree.node_info.each do |n| %>
+  <% if n[0] =~ index_regex and n[1][:ginfo] != nil %>
+    <% a_nodes << n %>
+  <% end %>
+<% end %>
+
+<% a_nodes.sort! {|a,b| a[1][:ginfo].sort_info <=> b[1][:ginfo].sort_info } %>
+
+<% a_nodes.each do |n| %>
+   <% ginfo = n[1][:ginfo] %>
+     <li>
+       <h3><a href="<%= n[0][index..-1].gsub(/\.nl\./, '.') %>"><%= ginfo.title %></a></h3>
+         <% if ginfo.index_image != nil %>
+           <a href="<%= n[0][index..-1].gsub(/\.nl\./, '.') %>" class="img">
+           <img src="<%= n[0][index..-1].gsub(index_regex, ginfo.index_image) %>" alt="<%= ginfo.title %>" title="<%= ginfo.title %>" width="220" height="69" />
+           </a>
+         <% end %>
+         <p><em>(<%= ginfo.images.length%> foto's)</em> <%= ginfo.shorten_description(120) %></p>
+         <div class="date">Vernieuwd: <%= ginfo.modified_ext %></div>
+     </li>
+<% end %>
+
+  </ul>
+</div>
+
+<div id="feeds">
+  <h2>Gallerij Feeds</h2>
+  <ul>
+    <li><a href="../galleries.rss" title="RSS feed voor recente gallerijen" class="i"><img src="../photo-templates/meta/img/icon_feed12.gif" alt="XML feed" width="12" height="12" /> Gallerijen</a></li>
+    <li><a href="../photos.rss" title="RSS feed voor recente foto's" class="i"><img src="../photo-templates/meta/img/icon_feed12.gif" alt="XML feed" width="12" height="12" /> Foto's</a></li>
+  </ul>
+</div>
+
+</div>
+
+</div>

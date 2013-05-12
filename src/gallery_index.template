@@ -1,0 +1,97 @@
+
+<div class="index">
+
+<div id="content">
+
+<webgen:block name="content"/>
+
+<h1>De Mondvermakers</h1>
+
+<div class="galleries">
+  <h2>Recent Vernieuwde Gallerijen</h2>
+  <ul>
+
+<% index_regex = /index\.[a-z][a-z]\.html/ %>
+<% index = context.node.alcn.index(index_regex) %>
+<% a_nodes = [] %>
+<% context.node.tree.node_info.each do |n| %>
+  <% if n[0] =~ index_regex and n[1][:ginfo] != nil %>
+    <% a_nodes << n %>
+  <% end %>
+<% end %>
+<% a_nodes.sort! {|a,b| b[1][:ginfo].modified <=> a[1][:ginfo].modified } %>
+
+<% (0..5).each do |i| %>
+   <%  next if a_nodes[i] == nil %>
+   <% ginfo = a_nodes[i][1][:ginfo] %>
+     <li>
+       <h3><a href="<%= a_nodes[i][0][index..-1].gsub(/\.nl\./, '.') %>"><%= ginfo.title %></a></h3>
+         <% if ginfo.index_image != nil %>
+           <a href="<%= a_nodes[i][0][index..-1].gsub(/\.nl\./, '.') %>" class="img">
+           <img src="<%= a_nodes[i][0][index..-1].gsub(index_regex, ginfo.index_image) %>" alt="<%= ginfo.title %>" title="<%= ginfo.title %>" width="220" height="69" />
+           </a>
+         <% end %>
+         <p><em>(<%= ginfo.images.length%> foto's)</em> <%= ginfo.shorten_description(50) %></p>
+         <div class="date">Vernieuwd: <%= a_nodes[i][1][:ginfo].modified_ext %></div>
+     </li>
+<% end %>
+
+  </ul>
+  <p class="mainbutton"><a href="gallerijen/index.html" class="btn"><img src="photo-templates/meta/img/btn_gallery_archive.gif" width="118" height="21" alt="Gallery Archive" /></a></p>
+</div>
+
+
+
+<div id="secondary">
+
+<div class="module">
+
+<h2>Beschrijving</h2>
+  <p>U kan hier een set van gallerijen bekijken met foto's genomen tijdens de kooklessen van De Mondvermakers. De lessen van De Mondvermakers worden mede mogelijk gemaakt door de PIB (<a href="http://www.pib-olv-ieper.be">www.pib-olv-ieper.be</a>).</p>
+</div>
+
+
+<div class="module">
+
+<h2>De Mondvermakers</h2>
+  <p align="center"><img src="images/mondvermakerslogo.jpg" alt="De Mondvermakers" title="De Mondvermakers" width="132" height="132" /></p>
+
+</div>
+
+
+<div class="module">
+
+<% p_counter = 0 %>
+<% a_nodes.each do |n| %>
+   <% ginfo = n[1][:ginfo] %>
+   <% p_counter = p_counter + ginfo.images.length %>
+<% end %>
+
+
+<h2>Gallerij gegevens</h2>
+<table cellspacing="0" class="gallerydata">
+  <tr>
+    <th><a href="gallerijen/index.html">Gallerijen</a></th>
+    <td><%= a_nodes.length %></td>
+    <td><a href="galleries.rss" title="RSS feed voor recente gallerijen" class="i"><img src="photo-templates/meta/img/icon_feed12.gif" alt="XML feed" width="12" height="12" /></a></td>
+  </tr>
+  <tr>
+    <th>Foto's</th>
+    <td><%= p_counter %></td>
+    <td><a href="photos.rss" title="RSS feed voor recente foto's" class="i"><img src="photo-templates/meta/img/icon_feed12.gif" alt="XML feed" width="12" height="12" /></a></td>
+  </tr>
+</table>
+
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>

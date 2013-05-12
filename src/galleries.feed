@@ -1,0 +1,10 @@
+---
+title: De Mondvermakers Gallerijen
+description: De Mondvermakers
+site_url: http://users.telenet.be/hsvh/mondvermakers
+author: De Mondvermakers
+number_of_entries: 1000
+rss: true
+atom: true
+entries: [gallerijen/*/index.nl.html]
+content_block_name: content

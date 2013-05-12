@@ -1,0 +1,65 @@
+
+
+/* =breadcrumb
+----------------------------------------------- */
+#breadcrumb {
+  background:#000;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  margin:0;
+  padding:4px 0 6px;
+  border-bottom:3px solid #555;
+  font-size:85%;
+  line-height:1.6em;
+  color:#777;
+  text-align:center;
+  }
+#breadcrumb a {
+  font-weight:normal;
+  border-color:#777;
+  color:#888;
+  }
+
+
+/* =Slideset
+Normal group of slide-like thumbnails
+----------------------------------------------- */
+#slidesets {
+  width:800px;
+  margin:0 auto;
+  text-align:center;
+  }
+  
+.slideset2 {
+  margin:0 0 15px;
+  padding:0;
+  width:100%;
+  list-style:none;
+  line-height:1.4em;
+  }
+
+.slideset2 .thumb {
+  margin:0 10px 10px 0;
+}
+
+/* =adset
+Google Adsense space
+----------------------------------------------- */
+#adsets {
+  width:800px;
+  margin:0px auto 10px auto;
+  text-align:center;
+  }
+  
+/* =Commentset
+The facebook comment box
+----------------------------------------------- */
+#commentsets {
+  width:800px;
+  margin:0 auto;
+  text-align:center;
+  }
+  
+

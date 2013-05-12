@@ -1,0 +1,39 @@
+
+<% 
+ginfo = context.node.node_info[:ginfo]
+%>
+
+<div class="title">
+
+<div id="content">
+
+<h1><%= ginfo.title %></h1>
+
+<% if ginfo.images.length != 0 %>
+<h1><a href="<%= ginfo.images[0].pagename %>"><img alt="<%= ginfo.title %>" title="<%= ginfo.title %>" src="<%= ginfo.collage_image %>" width="733" height="333" /></a></h1>
+<% else %>
+<p><img alt="<%= ginfo.title %>" title="<%= ginfo.title %>" src="<%= ginfo.collage_image %>" width="733" height="333" /></p>
+<% end %>
+
+
+<div id="gallerydesc">
+  <% if ginfo.data['description'] %>
+  <p><%= ginfo.data['description'] %></p>
+  <% end %>
+  <p>Vernieuwd: <%= ginfo.modified_ext %></p>
+  <p>(<em><%= ginfo.images.length %> foto's</em>)</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="slidesets">
+<ul class="slideset2">
+  <% (0..(ginfo.images.length-1)).each do |i| %>
+    <li class="thumb"><em style="background-image:url('<%= ginfo.images[i].thumbnail_src %>');"><a href="<%= ginfo.images[i].pagename %>" style="background:#fff;"><%= ginfo.images[i].title %></a></em></li>
+  <% end %>
+</ul>
+</div>
+

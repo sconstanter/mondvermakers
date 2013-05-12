@@ -1,0 +1,6 @@
+---
+site_url: http://users.telenet.be/hsvh/mondvermakers
+default_priority: 0.5
+default_change_freq: daily
+common.sitemap.any_lang: true
+---

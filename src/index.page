@@ -1,0 +1,9 @@
+---
+title: De Mondvermakers
+in_menu: false
+routed_title: De Mondvermakers
+omit_index_path: true
+template: gallery_index.template
+meta: {description: "De Mondvermakers", Keywords: "De Mondvermakers"}
+used_nodes: [gallerijen/*/index.nl.html, gallery_index.template]
+---

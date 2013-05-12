@@ -1,0 +1,107 @@
+/*
+-----------------------------------------------
+Photo Gallery Templates: Labels
+Author:   Douglas Bowman
+----------------------------------------------- */
+
+
+/* Labels
+----------------------------------------------- */
+.airliebeach {background-image:url("../labels/txt_airliebeach.gif");}
+.thumbv .airliebeach {background-image:url("../labels/txt_airliebeach_v.gif");}
+.amsterdam {background-image:url("../labels/txt_amsterdam.gif");}
+.thumbv .amsterdam {background-image:url("../labels/txt_amsterdam_v.gif");}
+.anaheim {background-image:url("../labels/txt_anaheim.gif");}
+.thumbv .anaheim {background-image:url("../labels/txt_anaheim_v.gif");}
+.arrowtown {background-image:url("../labels/txt_arrowtown.gif");}
+.thumbv .arrowtown {background-image:url("../labels/txt_arrowtown_v.gif");}
+.atlanta {background-image:url("../labels/txt_atlanta.gif");}
+.thumbv .atlanta {background-image:url("../labels/txt_atlanta_v.gif");}
+.austin {background-image:url("../labels/txt_austin.gif");}
+.thumbv .austin {background-image:url("../labels/txt_austin_v.gif");}
+.backward {background-image:url("../labels/txt_backward.gif");}
+.barcelona {background-image:url("../labels/txt_barcelona.gif");}
+.thumbv .barcelona {background-image:url("../labels/txt_barcelona_v.gif");}
+.barrierreef {background-image:url("../labels/txt_barrierreef.gif");}
+.thumbv .barrierreef {background-image:url("../labels/txt_barrierreef_v.gif");}
+.boston {background-image:url("../labels/txt_boston.gif");}
+.thumbv .boston {background-image:url("../labels/txt_boston_v.gif");}
+.brisbane {background-image:url("../labels/txt_brisbane.gif");}
+.thumbv .brisbane {background-image:url("../labels/txt_brisbane_v.gif");}
+.cairns {background-image:url("../labels/txt_cairns.gif");}
+.thumbv .cairns {background-image:url("../labels/txt_cairns_v.gif");}
+.chico {background-image:url("../labels/txt_chico.gif");}
+.thumbv .chico {background-image:url("../labels/txt_chico_v.gif");}
+.christchurch {background-image:url("../labels/txt_christchurch.gif");}
+.thumbv .christchurch {background-image:url("../labels/txt_christchurch_v.gif");}
+.columbus {background-image:url("../labels/txt_columbus.gif");}
+.thumbv .columbus {background-image:url("../labels/txt_columbus_v.gif");}
+.copenhagen {background-image:url("../labels/txt_copenhagen.gif");}
+.thumbv .copenhagen {background-image:url("../labels/txt_copenhagen_v.gif");}
+.disney {background-image:url("../labels/txt_disney.gif");}
+.thumbv .disney {background-image:url("../labels/txt_disney_v.gif");}
+.forward {background-image:url("../labels/txt_forward.gif");}
+.hongkong {background-image:url("../labels/txt_hongkong.gif");}
+.thumbv .hongkong {background-image:url("../labels/txt_hongkong_v.gif");}
+.kawarau {background-image:url("../labels/txt_kawarau.gif");}
+.thumbv .kawarau {background-image:url("../labels/txt_kawarau_v.gif");}
+.lasvegas {background-image:url("../labels/txt_lasvegas.gif");}
+.thumbv .lasvegas {background-image:url("../labels/txt_lasvegas_v.gif");}
+.london {background-image:url("../labels/txt_london.gif");}
+.thumbv .london {background-image:url("../labels/txt_london_v.gif");}
+.losangeles {background-image:url("../labels/txt_losangeles.gif");}
+.thumbv .losangeles {background-image:url("../labels/txt_losangeles_v.gif");}
+.madrid {background-image:url("../labels/txt_madrid.gif");}
+.thumbv .madrid {background-image:url("../labels/txt_madrid_v.gif");}
+.melbourne {background-image:url("../labels/txt_melbourne.gif");}
+.thumbv .melbourne {background-image:url("../labels/txt_melbourne_v.gif");}
+.methven {background-image:url("../labels/txt_methven.gif");}
+.thumbv .methven {background-image:url("../labels/txt_methven_v.gif");}
+.miami {background-image:url("../labels/txt_miami.gif");}
+.thumbv .miami {background-image:url("../labels/txt_miami_v.gif");}
+.montreal {background-image:url("../labels/txt_montreal.gif");}
+.thumbv .montreal {background-image:url("../labels/txt_montreal_v.gif");}
+.napa {background-image:url("../labels/txt_napa.gif");}
+.thumbv .napa {background-image:url("../labels/txt_napa_v.gif");}
+.nevis {background-image:url("../labels/txt_nevis.gif");}
+.thumbv .nevis {background-image:url("../labels/txt_nevis_v.gif");}
+.newyork {background-image:url("../labels/txt_newyork.gif");}
+.thumbv .newyork {background-image:url("../labels/txt_newyork_v.gif");}
+.nipomo {background-image:url("../labels/txt_nipomo.gif");}
+.thumbv .nipomo {background-image:url("../labels/txt_nipomo_v.gif");}
+.orlando {background-image:url("../labels/txt_orlando.gif");}
+.thumbv .orlando {background-image:url("../labels/txt_orlando_v.gif");}
+.oroville {background-image:url("../labels/txt_oroville.gif");}
+.thumbv .oroville {background-image:url("../labels/txt_oroville_v.gif");}
+.otago {background-image:url("../labels/txt_otago.gif");}
+.thumbv .otago {background-image:url("../labels/txt_otago_v.gif");}
+.paris {background-image:url("../labels/txt_paris.gif");}
+.thumbv .paris {background-image:url("../labels/txt_paris_v.gif");}
+.portland {background-image:url("../labels/txt_portland.gif");}
+.thumbv .portland {background-image:url("../labels/txt_portland_v.gif");}
+.pukaki {background-image:url("../labels/txt_pukaki.gif");}
+.thumbv .pukaki {background-image:url("../labels/txt_pukaki_v.gif");}
+.queenstown {background-image:url("../labels/txt_queenstown.gif");}
+.thumbv .queenstown {background-image:url("../labels/txt_queenstown_v.gif");}
+.sandiego {background-image:url("../labels/txt_sandiego.gif");}
+.thumbv .sandiego {background-image:url("../labels/txt_sandiego_v.gif");}
+.sanfrancisco {background-image:url("../labels/txt_sanfrancisco.gif");}
+.thumbv .sanfrancisco {background-image:url("../labels/txt_sanfrancisco_v.gif");}
+.seattle {background-image:url("../labels/txt_seattle.gif");}
+.thumbv .seattle {background-image:url("../labels/txt_seattle_v.gif");}
+.sydney {background-image:url("../labels/txt_sydney.gif");}
+.thumbv .sydney {background-image:url("../labels/txt_sydney_v.gif");}
+.tekapo {background-image:url("../labels/txt_tekapo.gif");}
+.thumbv .tekapo {background-image:url("../labels/txt_tekapo_v.gif");}
+.townsville {background-image:url("../labels/txt_townsville.gif");}
+.thumbv .townsville {background-image:url("../labels/txt_townsville_v.gif");}
+.twizel {background-image:url("../labels/txt_twizel.gif");}
+.thumbv .twizel {background-image:url("../labels/txt_twizel_v.gif");}
+.vancouver {background-image:url("../labels/txt_vancouver.gif");}
+.thumbv .vancouver {background-image:url("../labels/txt_vancouver_v.gif");}
+.wanaka {background-image:url("../labels/txt_wanaka.gif");}
+.thumbv .wanaka {background-image:url("../labels/txt_wanaka_v.gif");}
+.wellington {background-image:url("../labels/txt_wellington.gif");}
+.thumbv .wellington {background-image:url("../labels/txt_wellington_v.gif");}
+.whitsundays {background-image:url("../labels/txt_whitsundays.gif");}
+.thumbv .whitsundays {background-image:url("../labels/txt_whitsundays_v.gif");}
